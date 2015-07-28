@@ -1,0 +1,14 @@
+{
+  "name": "electron-rpc",
+  "version": "1.0.0",
+  "description": "A lightweight rpc-style wrapper for the ipc module of electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard ./*.js"
+  },
+  "author": "Marc Bachmann <marc.brookman@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^4.5.4"
+  }
+}
