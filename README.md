@@ -1,6 +1,8 @@
 # electron-rpc
 
-A lightweight wrapper around the ipc module of [Electron](https://github.com/atom/electron)
+##### A lightweight wrapper around the ipc module of electron  
+
+This module is only compatible with [Electron](https://github.com/atom/electron). It won't work in nodejs directly.
 
 #### Server API
 ```
@@ -23,7 +25,7 @@ client.destroy()
 ```
 
 #### Usage
-Server side
+##### Server side
 ```
 var Server = require('electron-rpc/server')
 var app = new Server()
@@ -47,7 +49,7 @@ app.send('some-server-message', 'bar')
 
 Here's the documentation about the [BrowserWindow.webContents](https://github.com/atom/electron/blob/master/docs/api/browser-window.md#browserwindowwebcontents) object.
 
-Client side
+##### Client side
 ```
 var Client = require('electron-rpc/client')
 client = new Client()

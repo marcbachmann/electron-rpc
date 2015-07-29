@@ -10,5 +10,20 @@
   "license": "MIT",
   "devDependencies": {
     "standard": "^4.5.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcbachmann/electron-rpc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcbachmann/electron-rpc/issues"
+  },
+  "homepage": "https://github.com/marcbachmann/electron-rpc#readme",
+  "keywords": [
+    "electron",
+    "atom-shell",
+    "atom",
+    "rpc",
+    "ipc"
+  ]
 }
