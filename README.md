@@ -1,6 +1,6 @@
 # electron-rpc
 
-##### A lightweight wrapper around the ipc module of electron  
+A lightweight wrapper around the ipc module of electron
 
 This module is only compatible with [Electron](https://github.com/atom/electron). It won't work in nodejs directly.
 
