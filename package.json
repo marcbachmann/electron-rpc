@@ -1,6 +1,6 @@
 {
   "name": "electron-rpc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight rpc-style wrapper for the ipc module of electron",
   "main": "index.js",
   "scripts": {
