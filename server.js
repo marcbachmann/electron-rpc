@@ -15,7 +15,7 @@ Server.prototype.send = function (action, body) {
 }
 
 function sendResponse (response) {
-  if (!this.webContents) throw new Error("The electron-rpc Server isn't configured. Please use server.configure(eventEmitter)")
+  if (!this.webContents) return console.error(new Error("The electron-rpc Server isn't configured. Please use server.configure(eventEmitter)"))
   this.webContents.send('response-message', response)
 }
 
