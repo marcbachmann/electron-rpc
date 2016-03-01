@@ -1,4 +1,4 @@
-var ipc = require('ipc')
+var ipc = require('electron').ipcMain
 
 function Server (webContents) {
   this.methods = {}
