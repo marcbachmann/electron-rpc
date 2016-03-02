@@ -1,9 +1,9 @@
 var events = require('events')
-var ipc = require('ipc')
+var ipcRenderer = require('electron').ipcRenderer
 
 function Client () {
   this.requests = {}
-  this.remoteEventEmitter = ipc
+  this.remoteEventEmitter = ipcRenderer
   this.localEventEmitter = new events.EventEmitter()
   this._responseMessageHandler = responseMessageHandler.bind(this)
   this.remoteEventEmitter.on('response-message', this._responseMessageHandler)

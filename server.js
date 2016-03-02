@@ -1,12 +1,11 @@
-var ipc = require('electron').ipcMain
+var ipcMain = require('electron').ipcMain
 
 function Server (webContents) {
   this.methods = {}
   this.webContents = webContents
 
-  // ipc.removeAllListeners('request-message')
   this._requestMessageHandler = requestMessageHandler.bind(this)
-  ipc.on('request-message', this._requestMessageHandler)
+  ipcMain.on('request-message', this._requestMessageHandler)
 }
 
 Server.prototype.send = function (action, body) {
@@ -32,7 +31,7 @@ Server.prototype.on = function (action, callback) {
 Server.prototype.destroy = function () {
   this.methods = {}
   this.webContents = undefined
-  ipc.removeListener('request-message', this._requestMessageHandler)
+  ipcMain.removeListener('request-message', this._requestMessageHandler)
 }
 
 function requestMessageHandler (ev, data) {
