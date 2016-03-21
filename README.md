@@ -4,6 +4,10 @@ A lightweight wrapper around the ipc module of electron
 
 This module is only compatible with [Electron](https://github.com/atom/electron). It won't work in nodejs directly.
 
+
+Please use electron-rpc@v2.0.0 if you're using [electron >= v0.35.0](https://github.com/atom/electron/releases/tag/v0.35.0). The ipc module api changed with that version.
+
+
 #### Server API
 ```
 var Server = require('electron-rpc/server')
