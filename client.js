@@ -39,7 +39,7 @@ Client.prototype.destroy = function () {
   this.remoteEventEmitter.removeListener('response-message', this._responseMessageHandler)
 }
 
-function responseMessageHandler (response) {
+function responseMessageHandler (evt, response) {
   this.localEventEmitter.emit('response-message:' + response.action, response.error, response.body)
   if (response.id) {
     var request = this.requests[response.id]
