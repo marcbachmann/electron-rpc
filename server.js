@@ -34,7 +34,7 @@ Server.prototype.destroy = function () {
   ipcMain.removeListener('request-message', this._requestMessageHandler)
 }
 
-function requestMessageHandler (ev, data) {
+function requestMessageHandler (evt, data) {
   var self = this
   var response = {id: data.id, action: data.action}
   var request = {id: data.id, action: data.action, body: data.body}
