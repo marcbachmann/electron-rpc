@@ -9,7 +9,7 @@
   "author": "Marc Bachmann <marc.brookman@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "standard": "^4.5.4"
+    "standard": "^8.5.0"
   },
   "repository": {
     "type": "git",
